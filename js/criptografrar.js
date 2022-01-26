@@ -17,13 +17,13 @@ botaoCriptografar.addEventListener('click', function (event) {
   var cripto = document.querySelector('#form-cripto')
   var textoCripto = cripto['input-texto'].value
 
-  // joga o texto na mensagem criptografada
+  // joga o texto na mensagem pra criptografar
   var textoColado = document.querySelector('#msg')
   textoColado.value = textoCripto
     .replace(/[e\é\è\ê]/gi, 'enter')
     .replace(/[i\ì\í\î]/gi, 'imes')
     .replace(/[a\à\á\â]/gi, 'ai')
     .replace(/[o\ò\ó\ô]/gi, 'ober')
-    .replace(/[u\ù\ó\ô]/gi, 'ufat')
+    .replace(/[u\ù\ú\û]/gi, 'ufat')
     .toLowerCase()
 })
